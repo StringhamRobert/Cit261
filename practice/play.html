@@ -73,46 +73,11 @@
             return reply;
             }
             }
-            
-    
-    /*
-    function joinlight() {
-        var light = [];
-        light["name"] = "Yoda";
-        light["Jedi"] = "Yes";
-         var lightside = document.getElementById("starwarslight");
-          document.getElementById("starwarslight").innerHTML = light["name"] + "Saids Do. Or do not. There is no try.";
-    }
-            
-    function joindark() {
-              
-    var dark = [];
-    dark["name"] = "Vader";
-    dark["Jedi"] = "Yes";
-    var darkside = document.getElementById("starwarsdark");
-        if(lightside.addEventListener("click",joinlight){
-           return lightconvert;
-           }
-           else {
-    document.getElementById("starwarsdark").innerHTML = dark["name"] + "Now your failure is complete.";           
-    }
-    }
-     
-    function darkconvert() {
-     darkside.innerHTML = dark["name"];
-    }
-    function lightconvert() {
-        lightside.innerHTML = light["name"];
-    }    
-        
-    */                   
+                       
 function playforme() {
     var play = document.getElementsByClassName("blankspot");
-    var f;
-    for(i=0; i< 5; i++) {
-        f += play[i] + "<br>"
-    }
-    window.alert(f);
+  
+    window.alert(play);
 }
                 
 </script>   
@@ -122,7 +87,9 @@ function playforme() {
      <button type ="button" onclick="playforme()">display</button>
     <button type="button" onclick="match()">match</button>
     <div id = "matchtext"></div>
-    <div class = "blankspot"></div>
+    <p class = "blankspot"><p>
+    <br>
+    <br>
 </body>
     <div id ="four" onclick="fourfunction(), this.onclick=null" onmouseover = "fourpointer()" >four</div>
     <div id ="score" onclick="scorefunction(), this.onclick=null" onmouseover = "scorepointer()" >score</div>
