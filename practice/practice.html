@@ -1,14 +1,81 @@
-<!DOCTYPE html>
-<html>
+<!doctype HTML>
+<html lang="en-us">
+<meta charset="utf-8">
 
-<title>
-  work
-</title>
+<head>
+<title>Examples of loops</title>
+<script type ="text/javascript">
+                       
+   function joinlight() {     
+    var light = [];
+        light["name"] = "Yoda";
+        light["Jedi"] = "Yes";
+         var lightside = document.getElementById("starwarslight");
+    
+          document.getElementById("starwarslight").innerHTML = light["name"] + "Saids Do. Or do not. There is no try.";                   
+   }
+    
+    function joindark() {
+                     
+    var dark = [];
+    dark["name"] = "Vader";
+    dark["Jedi"] = "Yes";
+    var dside = document.getElementById("starwarsdark");
+        
+        
+    var darkside = document.createElement("text");
+        var darside = document.createTextNode("very impressive");
+        darkside.appendChild(darside);
+        document.body.appendChild(darkside);    
+     
+    }
+                       
+</script>   
+</head>
 <body>
-<h1>hello wddorld</h1>
-<header>
-</header>
-<footer>
-</footer>
-    </body>
+</body>
+
+    <button type="button" onclick="joinlight()">Light</button>
+    <button type="button" onclick="joindark()">Dark</button>
+    
+   
+	<div id="starwarslight"></div>
+    <div id="starwarsdark"></div>
+      
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function yearsfunction() {
+        var yearsE = document.createElement("p");
+        var yearsdiv = document.createTextNode("years");
+        yearsE.appendChild(yearsdiv);
+        document.getElementsByClassName("blankspot")[0].appendChild(yearsE);
+    }
+    function agofunction() {
+        var agoE = document.createElement("p");
+        var agodiv = document.createTextNode("ago");
+        agoE.appendChild(agodiv);
+        document.getElementsByClassName("blankspot")[0].appendChild(agoE);
+    }
+
+
+
+
+
+
+
+
+
+

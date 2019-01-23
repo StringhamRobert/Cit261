@@ -1,0 +1,133 @@
+<!doctype HTML>
+<html lang="en-us">
+<meta charset="utf-8">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/play.css">
+<title>Examples of loops</title>
+<script type ="text/javascript">
+ 
+    
+    function fourfunction() {
+        var fourdiv = document.createTextNode("four ");
+        document.getElementsByClassName("blankspot")[0].appendChild(fourdiv);
+    }
+    function scorefunction() {
+        var scorediv = document.createTextNode("score ");
+        document.getElementsByClassName("blankspot")[0].appendChild(scorediv);
+    }
+    function andfunction() {
+        var anddiv = document.createTextNode("and ");
+        document.getElementsByClassName("blankspot")[0].appendChild(anddiv);
+    }
+    function sevenfunction() {   
+        var sevendiv = document.createTextNode("seven ");
+        document.getElementsByClassName("blankspot")[0].appendChild(sevendiv);
+    }
+    function yearsfunction() {
+        var yearsdiv = document.createTextNode("years ");
+        document.getElementsByClassName("blankspot")[0].appendChild(yearsdiv);
+    }
+    function agofunction() {
+        var agodiv = document.createTextNode("ago ");
+        document.getElementsByClassName("blankspot")[0].appendChild(agodiv);
+    }
+    function fourpointer() {
+        document.getElementById('four').style.cursor = "pointer";
+    }
+    function scorepointer() {
+        document.getElementById('score').style.cursor = "pointer";
+    }
+    function andpointer() {
+        document.getElementById('and').style.cursor = "pointer";
+    }
+    function sevenpointer() {
+        document.getElementById('seven').style.cursor = "pointer";
+    }
+    function yearspointer() {
+        document.getElementById('years').style.cursor = "pointer";
+    }
+    function agopointer() {
+        document.getElementById('ago').style.cursor = "pointer";
+    }
+    
+    function match() {
+        var matchreply;
+        var problem = matchproof();
+        if (problem == true) {
+            matchreply = "correct";        
+        } else {
+            matchreply = "nope";
+        }
+        document.getElementById("matchtext").innerHTML = matchreply;
+    
+    
+    function matchproof() {
+        var lincoln = document.getElementsByClassName("blankspot");
+        var reply;
+        if (lincoln === "four score and seven years ago") {
+            reply = true;
+        } else {
+                reply = false;
+            }
+            return reply;
+            }
+            }
+            
+    
+    /*
+    function joinlight() {
+        var light = [];
+        light["name"] = "Yoda";
+        light["Jedi"] = "Yes";
+         var lightside = document.getElementById("starwarslight");
+          document.getElementById("starwarslight").innerHTML = light["name"] + "Saids Do. Or do not. There is no try.";
+    }
+            
+    function joindark() {
+              
+    var dark = [];
+    dark["name"] = "Vader";
+    dark["Jedi"] = "Yes";
+    var darkside = document.getElementById("starwarsdark");
+        if(lightside.addEventListener("click",joinlight){
+           return lightconvert;
+           }
+           else {
+    document.getElementById("starwarsdark").innerHTML = dark["name"] + "Now your failure is complete.";           
+    }
+    }
+     
+    function darkconvert() {
+     darkside.innerHTML = dark["name"];
+    }
+    function lightconvert() {
+        lightside.innerHTML = light["name"];
+    }    
+        
+    */                   
+function playforme() {
+    var play = document.getElementsByClassName("blankspot");
+    var f;
+    for(i=0; i< 5; i++) {
+        f += play[i] + "<br>"
+    }
+    window.alert(f);
+}
+                
+</script>   
+</head>
+<body>
+   
+     <button type ="button" onclick="playforme()">display</button>
+    <button type="button" onclick="match()">match</button>
+    <div id = "matchtext"></div>
+    <div class = "blankspot"></div>
+</body>
+    <div id ="four" onclick="fourfunction(), this.onclick=null" onmouseover = "fourpointer()" >four</div>
+    <div id ="score" onclick="scorefunction(), this.onclick=null" onmouseover = "scorepointer()" >score</div>
+    <div id="and" onclick = "andfunction(), this.onclick=null" onmouseover = "andpointer()">and</div>
+    <div id ="seven" onclick = "sevenfunction(), this.onclick=null" onmouseover = "sevenpointer()">seven</div>
+    <div id ="years" onclick = "yearsfunction(), this.onclick=null" onmouseover = "yearspointer()">years</div>
+    <div id ="ago" onclick = "agofunction(), this.onclick=null" onmouseover = "agopointer()">ago</div>
+    

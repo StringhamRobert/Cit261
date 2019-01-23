@@ -1,0 +1,37 @@
+<!doctype HTML>
+<html lang="en-us">
+<meta charset="utf-8">
+
+<head>
+<title>Examples of loops</title>
+<script type ="text/javascript">
+   
+  
+   
+    function fluencyarr() {
+        var numbers = '';
+        var varray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+         var rijack =varray.length;
+            for (var i=0; i<rijack; i++){
+               
+                numbers += varray[i] + "<br>";
+            
+                
+                
+                
+            }
+            document.getElementById('looparr').innerHTML = numbers;
+            
+    }
+</script>   
+</head>
+<body>
+</body>
+    <button type="button" onclick="fluencylp()">start</button>
+    <button type="button" onclick="backwardslp()">start</button>
+    <button type="button" onclick="fluencyarr()">start</button>
+    
+	<div id="onscreen"></div>
+    <div id="bonscreen"></div>
+    <div id="looparr"></div>  
+</html>

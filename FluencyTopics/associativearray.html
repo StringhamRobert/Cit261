@@ -1,0 +1,124 @@
+<!doctype HTML>
+<html lang="en-us">
+<meta charset="utf-8">
+
+<head>
+<title>Examples of loops</title>
+<script type ="text/javascript">
+ 
+    /*
+     lightside.onclick("click", darkconvert)
+    function joinlight() {
+        var light = [];
+        light["name"] = "Yoda";
+        light["Jedi"] = "Yes";
+         var lightside = document.getElementById("starwarslight");
+          document.getElementById("starwarslight").innerHTML = light["name"] + "Saids Do. Or do not. There is no try.";
+    }
+            
+    function joindark() {
+              
+    var dark = [];
+    dark["name"] = "Vader";
+    dark["Jedi"] = "Yes";
+    var darkside = document.getElementById("starwarsdark");
+        
+    document.getElementById("starwarsdark").innerHTML = dark["name"] + "Now your failure is complete.";           
+            
+    }
+     
+    function darkconvert() {
+     darkside.innerHTML = dark["name"];
+    }
+    function lightconvert() {
+        lightside.innerHTML = light["name"];
+    }    
+        
+   */                      
+   
+   function joinlight() {
+        
+    var light = [];
+        light["name"] = "Yoda";
+        light["Jedi"] = "Yes";
+         var lightside = document.getElementById("starwarslight");
+    
+          document.getElementById("starwarslight").innerHTML = light["name"] + "Saids Do. Or do not. There is no try.";
+            
+                         }
+    
+    function joindark() {
+                     
+    var dark = [];
+    dark["name"] = "Vader";
+    dark["Jedi"] = "Yes";
+    var side = document.createElement("text");
+    var darkside = document.createTextNode("Impressive, Most Impressive");
+        side.appendChild(darkside);
+        
+    
+        
+       document.body.appendChild(side);
+        
+     
+                
+    }
+          
+    function darkness () {
+       
+       var emperor = document.createElement("text");
+       var vemperor = document.createTextNode("ver impressive");
+       emperor.appendChild(vemperor);
+       document.body.appendChild(emperor);
+       
+       
+   }
+        
+    
+   
+    
+    
+/*    
+  function joinlightordark() {
+    var light =[];
+    light["name"] = "Yoda";
+    light["side"] = "Light Side";
+    var lightside = document.getElementById("starwarslight");
+    
+    var dark = [];
+    dark["name"] = "Vader";
+    dark["side"] = "Dark Side";
+    var darkside = document.getElementById("starwarsdark");
+    
+        
+     if (lightside.clicked == true)  {
+            document.getElementById("starwarsdark").innerHTML = dark["name"] + "Now your failure is complete.";
+        }
+            
+            else {
+                document.getElementById("starwarsdark").innerHTML = dark["name"] + "says, Impressive. Most Impressive.";
+            }
+    }
+    
+   function darkconvert() {
+     darkside.innerHTML = dark["name"];
+    }
+    function lightconvert() {
+        lightside.innerHTML = light["name"];
+    }   
+  */  
+    
+                       
+</script>   
+</head>
+<body>
+</body>
+    <button type="button" onclick="joinlight()">Light</button>
+    <button type="button" onclick="joindark()">Dark</button>
+    <br>
+    <img src="/images/emperorgood.jpeg" alt = "goodgood" height="42" width ="42" hidden>
+    
+	<div id="starwarslight"></div>
+    <div id="starwarsdark"></div>
+      
+</html>
