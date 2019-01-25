@@ -65,7 +65,8 @@
     function matchproof() {
         var lincoln = document.getElementsByClassName("blankspot");
         var reply;
-        if (lincoln === "four score and seven years ago") {
+        
+        if (lincoln[0] === "four score and seven years ago") {
             reply = true;
         } else {
                 reply = false;
@@ -77,7 +78,12 @@
 function playforme() {
     var play = document.getElementsByClassName("blankspot");
   
-    window.alert(play);
+  var player = "";
+    var i;
+    for(i = 0; i < play.length; i++){
+        player += play[i] + "<br/>";
+    }
+    document.getElementById("matchtext2").innerText = player;
 }
                 
 </script>   
@@ -87,7 +93,8 @@ function playforme() {
      <button type ="button" onclick="playforme()">display</button>
     <button type="button" onclick="match()">match</button>
     <div id = "matchtext"></div>
-    <p class = "blankspot"><p>
+    <div id = "matchtext2"></div>
+    <p class = "blankspot"></p>   
     <br>
     <br>
 </body>
