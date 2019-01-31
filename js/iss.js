@@ -1,5 +1,5 @@
 'use strict'
-var issrequestURL = "http://api.open-notify.org/iss-now.json";
+var issrequestURL = "//api.open-notify.org/iss-now.json";
 var issrequest = new XMLHttpRequest();
 issrequest.open('GET', issrequestURL, true);
 issrequest.responseType = "text";
