@@ -64,37 +64,43 @@
     
     function matchproof() {
         var lincoln = document.getElementsByClassName("blankspot");
+        var answer;
         var reply;
+            reply = lincoln[0].innerText
         
-        if (lincoln[0] === "four score and seven years ago") {
-            reply = true;
+        if (reply === "four score and seven years ago") {
+            answer = true;
         } else {
-                reply = false;
+                answer = false;
             }
-            return reply;
+            return answer;
             }
             }
-                       
+/*                       
 function playforme() {
     var play = document.getElementsByClassName("blankspot");
   
-  var player = "";
-    var i;
-    for(i = 0; i < play.length; i++){
-        player += play[i] + "<br/>";
-    }
+  player = play[0].innerText
+    
     document.getElementById("matchtext2").innerText = player;
 }
+*/
+
                 
 </script>   
 </head>
 <body>
-   
-     <button type ="button" onclick="playforme()">display</button>
-    <button type="button" onclick="match()">match</button>
+   <h2>Find and click the words in the correct order.</h2>
+    
+    <!-- <button type ="button" onclick="playforme()">Display</button>    -->
+    
+    <button type="button" onclick="match()">Match</button>
+    
+    <p class= "blankspot"></p>
+
     <div id = "matchtext"></div>
-    <div id = "matchtext2"></div>
-    <p class = "blankspot"></p>   
+    
+    
     <br>
     <br>
 </body>

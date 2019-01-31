@@ -1,0 +1,44 @@
+<!doctype HTML>
+<html lang="en-us">
+<meta charset="utf-8">
+<link rel="stylesheet" href="/styles/forms.css">
+<head>
+    <title>Student Application</title>
+    <script>
+    function convert(){
+        var fname = document.forms["studentinfo"]["Fullname"].value;
+        var addname = document.forms["studentinfo"]["address"].value;
+        var cityname =document.forms["studentinfo"]["city"].value;
+        var stname = document.forms["studentinfo"]["state"].value;
+        var emname = document.forms["studentinfo"]["email"].value;
+        var studentdata = {Name: fname, Address: addname, City: cityname, State: stname, Email: emname}
+        var transferdata = JSON.stringify(studentdata)
+        document.getElementById("display").innerHTML = transferdata;
+    }
+    </script>
+    </head>
+    
+    <body>
+        <h1>Student Application</h1>
+        <form name="studentinfo">
+            <fieldset>
+            <Legend>Your info please.</Legend>
+            <label class="contactname required">Fullname<input type="text" name="Fullname" reqquied size="25"></label>
+            <label class="contactaddress">Address<input type="text" name ="address" maxlength = "100" size="40"></label>
+            <label class="contactcity">City<input type="text" name="city"></label>
+            <label class="contactstate">State<input type="text" name="state" size ="4"></label>
+            <label class="contactemail">E-Mail<input type="email" name="email" required></label>
+            </fieldset>
+        </form>
+        <main>
+        <p>Convert button takes the data from the form and makes the data json by using Stringfy().</p>
+        <br>
+        <p id="stdata"></p>
+        
+        </main>
+        
+    </body>
+    <button id = "btn" style="button" onclick="convert()">Convert</button>
+    <div id="display"></div>
+    
+</html>
