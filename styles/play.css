@@ -1,27 +1,201 @@
 body {
     
 }
-
+div {
+    text-align: center;
+    
+}
 #four {
+    
     width:100px;
     height:40px;
-    background-color: blue;
-    -webkit-animation-name: nomoon; 
-    animation: nommon;
-    animation-duration: 4s;
+    font-weight: bold;
+    
+    animation:
+        pulse 10s ease infinite alternate,
+        nudge 5s linear infinite alternate;
+    
     
     
 }
-
-)
-@-webkit-keyframes nomoon {
-    0% {background-color: blue;}
-    50% {background-color: green;}
-    100% {background-color: purple;}
+@keyframes pulse {
+    0%, 100% {
+        background-color: skyblue;
+    }
+    50% {
+        background-color: orange;
+    }
+    
 }
 
-@keyframes nommon {
-    0% {background-color: blue;}
-    50% {background-color: green;}
-    100% {background-color: purple;}
+@keyframes nudge {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(450px, 0);
+    }
+    80% {
+        transform: translate(150px, 0);
+    }
+}
+
+#score {
+    width:100px;
+    height:40px;
+    font-weight: bold;
+    animation: 
+        scoreanime 5s ease infinite alternate,
+    scoremove 5s ease infinite alternate;
+    
+}
+@keyframes scoreanime {
+    0%, 100% {
+        background-color: beige;
+    }
+    50% {
+        background-color: aqua;
+    }
+    
+}
+
+@keyframes scoremove {
+    0%, 100% {
+        transform: translate(500px, 0);
+    }
+    50% {
+        transform: translate(950px, 0);
+    }
+    80% {
+        transform: translate(1350px, 0);
+    }
+}
+#and {
+    width:100px;
+    height:40px;
+    font-weight: bold;
+    animation: 
+        movement 5s ease infinite alternate,
+    changecolor 5s ease infinite alternate;
+    
+}
+@keyframes changecolor{
+    0%, 100% {
+        background-color: red;
+    }
+    50% {
+        background-color: orange;
+    }
+    
+}
+
+@keyframes movement {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(450px, 0);
+    }
+    80% {
+        transform: translate(150px, 0);
+    }
+}
+#seven {
+    width:100px;
+    height:40px;
+    font-weight: bold;
+    animation: 
+        sevenmovement 5s ease infinite alternate,
+    sevenchangecolor 5s ease infinite alternate;
+    
+}
+@keyframes sevenchangecolor{
+    0%, 100% {
+        background-color: palevioletred;
+    }
+    50% {
+        background-color: greenyellow;
+    }
+    
+}
+
+@keyframes sevenmovement {
+    0% {
+        transform: translate(750px, 0);
+    }
+    50% {
+        transform: translate(950px, 0);
+    }
+    80% {
+        transform: translate(1150px, 0);
+    }
+    100%{
+        transform: translate(1400px, 0)
+    }
+}
+#years {
+    width:100px;
+    height:40px;
+    font-weight: bold;
+    animation: 
+        yearsmovement 5s ease infinite alternate,
+    yearschangecolor 5s ease infinite alternate;
+    
+}
+@keyframes yearschangecolor{
+    0%, 100% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    
+}
+
+@keyframes yearsmovement {
+    0% {
+        transform: translate(400px, 0);
+    }
+    50% {
+        transform: translate(650px, 0);
+    }
+    80% {
+        transform: translate(850px, 0);
+    }
+    100% {
+        transform: translate(1100px, 0)
+    }
+}
+#ago {
+    width:100px;
+    height:40px;
+    font-weight: bold;
+    animation: 
+        agomovement 5s ease infinite alternate,
+    agochangecolor 5s ease infinite alternate;
+    
+}
+@keyframes agochangecolor{
+    0%, 100% {
+        background-color: pink;
+    }
+    50% {
+        background-color: purple;
+    }
+    
+}
+
+@keyframes agomovement {
+    0%{
+        transform: translate(300px, 0);
+    }
+    50% {
+        transform: translate(550px, 0);
+    }
+    80% {
+        transform: translate(750px, 0);
+    }
+    100% {
+        transform: translate(900px, 0);
+    }
 }
