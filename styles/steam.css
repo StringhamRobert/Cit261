@@ -1,0 +1,64 @@
+
+#pokemonball {
+    animation-name:movepok;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    
+     
+   
+}
+
+
+
+@keyframes movepok {
+    0% {
+        transform:translate(0,0) rotate(180deg);
+    }
+    30% {
+        transform:translate(300px,0) rotate(360deg);
+    }
+}    
+#squball {
+    animation-name:squpoke;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    
+     
+   
+}
+
+
+
+@keyframes squpoke {
+    0%,100% {
+        transform:translate(300px,0) rotate(0deg);
+    }
+    30% {
+        transform:translate(600px,0) rotate(360deg);
+    }
+}
+#pokeimage {
+    transition:4s;
+
+}
+#pokeimage:hover {
+    animation-name: pika;
+    width: 200px;
+    height: 200px;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+    
+
+}
+#squimage {
+    transition:4s;
+}
+#squimage:hover {
+    
+    width: 200px;
+    height: 200px;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+    
+
+}
