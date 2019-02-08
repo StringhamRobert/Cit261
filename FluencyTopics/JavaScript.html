@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fluency Evidence Number 1">
+    <link rel="stylesheet" href="../styles/javascript.css">
+<title>Fluency Javascript</title>
+    
+    <script> 
+        
+        </script>
+         <script type ="text/javascript" src="../js/loop.js"></script>
+        <script type = "text/javascript" src="../js/ifelse.js"></script>
+        <script type = "text/javascript" src = "../js/function.js"></script>
+        <script type = "text/javascript" src = "../js/array.js"></script>
+    </head>
+    <body>
+        <h2>Loops</h2>
+        <p>In this example with loops were using the for loop<br>
+            with the for loop we can tell the loop to do it a certain amount of times.<br>
+            in this example 35 times<br><br>
+            function loopexample(){<br>
+    var birthday = "";<br>
+    for (i = 0; i < 36; i++) {<br>
+        birthday += i;<br>
+    }<br>
+        document.getElementById("loopdemo").innerHTML = birthday;<br>
+}<br>
+                       </p>
+        <p id = "loopdemo"></p>
+        <button type="button" onclick=loopexample()>Loop</button>
+        
+        <h2>Conditional Statements</h2>
+        <button type="button" onclick=ifelseexample()>ifelse</button>
+        <p id= "displayifelse"></p>
+        
+        <h2>Functions</h2>
+        <p>A function performs a task.<br>
+        For example:<br>
+        function mathexample(){<br>
+            var x = 10;<br>
+            var y = 12;<br>
+            var z = x + y;<br>
+            document.getElementById("example").innerHTML = z;<br>
+            }<br>
+        </p>
+        <h2>Variables</h2>
+        <p>The variables in function mathexample() are<br>
+        var x<br>
+        var Y<br><br>
+        You can store names, numbers and others in variables such as<br>
+        var x = "Robert";<br>
+        var y = "Stringham";<br>
+        var age = 35;
+        
+        
+        </p>
+        <h2>Parameters</h2>
+        <p>Parameters are names of variables put into a function that are from another function</p>
+        function mathexample(){<br>
+        var x = 10;<br>
+        var y = 12;<br>
+        var z = x + y;<br>
+       
+        }<br>
+        function parameter(z){<br>
+        var A = 50;
+        var B = z + A;
+        document.getElementById("example").innerHTML = A;<br>
+        
+        }
+        <h2>Arrays</h2>
+        <p id ="displayarray"></p>
+        <button type="button" onclick = arrayexample()>Array</button>
+        <p>function arrayexample(){<br>
+        var movies  = ["Star Wars", "Lord of the Rings", "Avengers", "Captain Marvel"];<br>
+        document.getElementById('displayarray').innerHTML = movies;<br>
+            }<br>
+        <h2>Associative Arrays</h2>
+        <p>From w3school about associate arrays</p>
+        <a href="https://www.w3schools.com/js/js_arrays.asp">w3school</a>
+        <p>Many programming languages support arrays with named indexes.<br>
+            Arrays with named indexes are called associative arrays (or hashes).<br>
+            JavaScript does not support arrays with named indexes.<br>
+            In JavaScript, arrays always use numbered indexes.  </p> 
+        <p>function w3schoolexample(){<br>
+            var person = [];<br>
+            person[0] = "John";<br>
+            person[1] = "Doe";<br>
+            person[2] = 46;<br>
+            var x = person.length; // person.length will return 3<br>
+            var y = person[0]; // person[0] will return "John"<br>
+            }<br>
+    </body>
+</html>
