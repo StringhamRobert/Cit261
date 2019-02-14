@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    
+   <link rel="stylesheet" href="../styles/mediatag.css">
     </head>
     <body>
         <h3>Youtube video</h3>
@@ -16,6 +16,22 @@
             <source src ="../mp4/lightsaber_02.mp3">
         </audio>
         <h3>Canvas</h3>
-        
+        <canvas id="canvas" width="50" height ="100"
+        style= "border:1px solid #d3d3d3;">
+        </canvas>
     </body>
+     <script>
+        
+        var thecanvas = document.getElementById("canvas");
+        var ctx = thecanvas.getContext("2d");
+         
+        var grd = ctx.createLinearGradient(0,0,200,0);
+         grd.addColorStop(0,"black");
+         grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+        
+    </script>
 </html>
