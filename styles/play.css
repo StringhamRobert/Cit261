@@ -1,3 +1,7 @@
+* { box-sizing: border-box;}  
+body, div {
+    
+}
 div {
     text-align: center;
     
@@ -30,10 +34,10 @@ div {
         transform: translate(0, 0);
     }
     50% {
-        transform: translate(450px, 0);
+        transform: translate(50px, 0);
     }
     80% {
-        transform: translate(150px, 0);
+        transform: translate(0px, 0);
     }
 }
 
@@ -58,13 +62,13 @@ div {
 
 @keyframes scoremove {
     0%, 100% {
-        transform: translate(500px, 0);
+        transform: translate(0px, 0);
     }
     50% {
-        transform: translate(950px, 0);
+        transform: translate(100px, 0);
     }
     80% {
-        transform: translate(1350px, 0);
+        transform: translate(200px, 0);
     }
 }
 #and {
@@ -91,10 +95,10 @@ div {
         transform: translate(0, 0);
     }
     50% {
-        transform: translate(450px, 0);
+        transform: translate(100px, 0);
     }
     80% {
-        transform: translate(150px, 0);
+        transform: translate(200px, 0);
     }
 }
 #seven {
@@ -118,16 +122,16 @@ div {
 
 @keyframes sevenmovement {
     0% {
-        transform: translate(750px, 0);
+        transform: translate(0px, 0);
     }
     50% {
-        transform: translate(950px, 0);
+        transform: translate(50px, 0);
     }
     80% {
-        transform: translate(1150px, 0);
+        transform: translate(150px, 0);
     }
     100%{
-        transform: translate(1400px, 0)
+        transform: translate(250px, 0)
     }
 }
 #years {
@@ -151,16 +155,16 @@ div {
 
 @keyframes yearsmovement {
     0% {
-        transform: translate(400px, 0);
+        transform: translate(0px, 0);
     }
     50% {
-        transform: translate(650px, 0);
+        transform: translate(50px, 0);
     }
     80% {
-        transform: translate(850px, 0);
+        transform: translate(100px, 0);
     }
     100% {
-        transform: translate(1100px, 0)
+        transform: translate(110px, 0)
     }
 }
 #ago {
@@ -184,15 +188,16 @@ div {
 
 @keyframes agomovement {
     0%{
-        transform: translate(300px, 0);
+        transform: translate(0px, 0);
     }
     50% {
-        transform: translate(550px, 0);
+        transform: translate(70px, 0);
     }
     80% {
-        transform: translate(750px, 0);
+        transform: translate(150px, 0);
     }
     100% {
-        transform: translate(900px, 0);
+        transform: translate(200px, 0);
     }
+}
 }

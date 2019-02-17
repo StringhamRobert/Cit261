@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html lang="en-us">
 <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <link rel="stylesheet" type="text/css" href="../styles/play.css">
 <title>Examples of loops</title>
@@ -76,6 +76,7 @@
             return answer;
             }
             }
+   
 /*                       
 function playforme() {
     var play = document.getElementsByClassName("blankspot");
@@ -103,6 +104,8 @@ function playforme() {
     
     <br>
     <br>
+  <script type="text/javascript" src="../js/giveup.js"></script>
+    <script type ="text/javascript" src="../js/startover.js"></script>
 </body>
     <div id ="four" onclick="fourfunction(), this.onclick=null" onmouseover = "fourpointer()" >four</div>
     <div id ="score" onclick="scorefunction(), this.onclick=null" onmouseover = "scorepointer()" >score</div>
@@ -111,3 +114,12 @@ function playforme() {
     <div id ="years" onclick = "yearsfunction(), this.onclick=null" onmouseover = "yearspointer()">years</div>
     <div id ="ago" onclick = "agofunction(), this.onclick=null" onmouseover = "agopointer()">ago</div>
     
+    <footer>
+        <br><br><br><br>
+        <br>
+    <div onmouseover = "giveup()">
+        <p>give up? <span id = "igive"></span></p>
+        </div>
+        <button type="button" onclick="startover()">Start over</button>
+        <div id = "startover"></div>
+    </footer>
