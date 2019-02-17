@@ -106,6 +106,9 @@ function playforme() {
     <br>
   <script type="text/javascript" src="../js/giveup.js"></script>
     <script type ="text/javascript" src="../js/startover.js"></script>
+    <script type = "text/javascript" src="../js/harder.js"></script>
+    <script type = "text/javascript" src="../js/slower.js"></script>
+     <script type = "text/javascript" src="../js/normal.js"></script>
 </body>
     <div id ="four" onclick="fourfunction(), this.onclick=null" onmouseover = "fourpointer()" >four</div>
     <div id ="score" onclick="scorefunction(), this.onclick=null" onmouseover = "scorepointer()" >score</div>
@@ -120,6 +123,9 @@ function playforme() {
     <div onmouseover = "giveup()">
         <p>give up? <span id = "igive"></span></p>
         </div>
-        <button type="button" onclick="startover()">Start over</button>
+        <button type="button" onclick="window.location.startover()">Start over</button>
         <div id = "startover"></div>
+        <button type="button" onclick="harder()">faster</button>
+        <button type = "button" onclick ="slower()">slower</button>
+        <button type = "button" onclick = "normal()">normal</button>
     </footer>
